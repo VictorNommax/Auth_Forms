@@ -1,0 +1,173 @@
+body{
+    background-color: #eee;
+    font-family:calibri, sans-serif;
+}
+.row{
+    display:flex;
+    flex-direction: row;
+}
+.column{
+    display:flex;
+    flex-direction: column;
+}
+.hidden{
+    display: none;
+    visibility: hidden;
+}
+.c_center{
+    justify-content: center;
+}
+.content_wrap{
+    height:90vh;
+}
+.form_wrap{
+    padding:20px;
+    font-size:20px;
+    max-width:300px;
+    margin: 0  auto;
+    background-color:#fff;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    border-radius:10px;
+}
+.form_wrap > input, h3, button{
+    text-align: center;
+}
+input{
+    min-width:280px;
+    padding:10px;
+    margin-bottom:10px;
+    border: 1px solid #ddd;
+    border-radius:5px;
+}
+.mistake{
+    border-color:rgb(219, 63, 63);
+}
+.errors_log{
+    min-height:20px;
+    margin-bottom:20px;
+    color:rgb(219, 63, 63);
+    font-size:12px;
+    line-height:125%;
+}
+#or_block{
+    font-weight:600;
+    font-size:14px;
+    color:#222;
+    padding-bottom:10px;
+}
+
+.btn{
+    padding:10px 20px;
+    min-width:100px;
+    border-radius:5px;
+    font-weight:600;
+    font-size:16px;
+    cursor:pointer;
+    color:#222;
+}
+.register_prepare{
+    background-color:#fff;
+    border:1px solid #eee;
+    color:#ccc;
+    margin-left:10px;
+}
+.register_prepare:hover{
+    text-decoration: underline;
+}
+
+.login_ready{
+    background-color:#58e699;
+    border:1px solid #58e699;
+}
+.login_ready:hover{
+    background-color:#78e9a0;
+    border:1px solid #78e9a0;
+}
+
+.register_ready{
+    background-color:#ff9950;
+    border:1px solid #ff9950;
+}
+.register_ready:hover{
+    background-color:#ffae75;
+    border:1px solid #ffae75;
+}
+.logout{
+    margin:0 auto;
+    margin-top:20px;
+    width:300px;
+    background-color:#ff9950;
+    border:1px solid #ff9950;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+}
+.logout:hover{
+    background-color:#ffae75;
+    border:1px solid #ffae75;
+}
+#link{
+    margin:0 auto;
+}
+a{
+    color:#ff9950;
+}
+a:visited{
+    color:#ff9950;
+}
+
+.avatar{
+    width:300px;
+    height:300px;
+    justify-content: space-between;
+    background-color:#333;
+    background-position:center;
+    background-size: cover;
+    border-radius:5px;
+}
+.inst_name{
+    padding:20px;
+    font-size:12px;
+    color:#fff;
+    text-align:center;
+}
+.straight_name{
+    font-weight:600;
+    font-size:14px;
+    color:#ff9950;
+}
+.user_info{
+    color:#eee;
+    font-size:12px;
+    background:rgba(0,0,0,0.4);
+    padding:20px;
+    border-radius:0px 0px 5px 5px;
+}
+.user_name{
+    font-weight:600;
+    font-size:24px;
+    margin-bottom:10px;
+}
+.straight{
+    color:#fff;
+    font-size:20px;
+}
+.user_data{
+    justify-content: space-between;
+}
+
+.message{
+    position:absolute;
+    padding:10px 25px;
+    border:1px solid rgb(43, 105, 43);
+    background:rgb(181, 228, 181);
+    color:rgb(43, 105, 43);
+    font-size:16px;
+    opacity:0;
+    border-radius:5px;
+    animation: go_down 14s;
+}
+@keyframes go_down {
+    0%   {top: 1vh;opacity:0;}
+    20% {top: 7vh;opacity:1;}
+    90%   {top: 7vh;opacity:1;}
+    100% {top: 1vh;opacity:0;}
+  }

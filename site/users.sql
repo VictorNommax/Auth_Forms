@@ -1,0 +1,17 @@
+CREATE DATABASE IF NOT EXISTS code_test_db;
+
+USE code_test_db;
+
+CREATE TABLE IF NOT EXISTS Users
+(
+    User_ID INT(11) UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    Login VARCHAR(32) NOT NULL,
+    Password VARCHAR(64) NOT NULL,
+    Name VARCHAR(30) NOT NULL,
+    Photo VARCHAR(37) NULL,
+    Birth_Date DATE NOT NULL,
+    Inst_URL VARCHAR(100) NULL,
+    Attempts TINYINT(2) DEFAULT 10,
+
+    UNIQUE(Login)
+);
